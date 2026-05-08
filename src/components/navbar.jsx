@@ -14,7 +14,7 @@ const Navbar = () => {
       </div>
       </div>
       <h1 className="text-[#b6b3b3c1] text-2xl">root@vault:~$
-      <span style={{ animation: 'pulse 0.7s step-end infinite' }}>█</span>
+      <span className="cursor">█</span>
       </h1>
       <input
         type="text"
