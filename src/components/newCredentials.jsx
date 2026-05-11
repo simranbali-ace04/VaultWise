@@ -27,7 +27,7 @@ const NewCredentials = () => {
         </div>
 
         <div className='flex items-center justify-center'>
-            <button className='text-black font-light mt-8 text-sm md:text-xl bg-[#00FF41] shadow-[0_0_15px_rgba(0,255,65,0.4)] hover:bg-[#00cc33] px-6 py-3.5 rounded-md'>
+            <button className='text-black font-light mt-4 text-sm md:text-xl bg-[#00FF41] shadow-[0_0_15px_rgba(0,255,65,0.4)] hover:bg-[#00cc33] px-6 py-3.5 rounded-md'>
                 <span>[ COMMIT ]</span>
                 </button>
         </div>
