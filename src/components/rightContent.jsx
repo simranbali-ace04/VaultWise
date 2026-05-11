@@ -8,8 +8,8 @@ const RightContent = () => {
         <h1 className="text-white text-xl md:text-2xl">Stored Passwords</h1>
         <h1 className="text-[#b6b3b3c1] text-sm md:text-lg">$ ls --all-passwords</h1>
       </div>
-        <div className="flex-1 min-h-0 overflow-y-auto custom-scrollbar mt-2 [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
-        <div className="flex flex-wrap content-start justify-start gap-5 p-1">
+        <div className="flex-1 md:min-h-0 md:overflow-y-auto [scrollbar-width:none] [-ms-overflow-style:none] [&::-webkit-scrollbar]:hidden">
+            <div className="flex flex-wrap content-start justify-center md:justify-start gap-5 p-1 pb-10">
           <PasswordCard />
           <PasswordCard />
           <PasswordCard />
