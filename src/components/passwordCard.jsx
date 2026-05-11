@@ -1,4 +1,5 @@
 import React from "react";
+import { Trash } from "lucide-react";
 
 const PasswordCard = () => {
   return (
@@ -35,6 +36,11 @@ const PasswordCard = () => {
               something@123
             </span>
           </h1>
+        </div>
+        <div className="flex justify-end">
+            <button>
+              <Trash className="text-[#00FF41] hover:text-[#00cc33] cursor-pointer" />
+            </button>
         </div>
       </div>
     </div>

@@ -1,5 +1,6 @@
 import React from "react";
 import PasswordCard from "./passwordCard";
+import { Trash } from "lucide-react";
 const RightContent = () => {
   return (
     <div className="bg-black border-[#00FF41] border rounded-xl p-4 flex flex-col gap-2  min-h-40 w-full md:w-3/5 shadow-[0_0_10px_rgba(0,255,65,0.2)] font-mono overflow-hidden">
