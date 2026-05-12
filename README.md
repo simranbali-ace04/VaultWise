@@ -62,40 +62,35 @@ So I built VaultWise. A terminal-inspired, Cyber-Shell password manager that liv
 
 ---
 
-## Project structure
- 
-```
+## 📂 Project structure
+
+
 src/
+├── assets/              # Visual assets and screenshots
 ├── components/
-│   ├── navbar.jsx           # Branding, terminal status indicator
+│   ├── navbar.jsx           # Branding and terminal status
 │   ├── leftContent.jsx      # Layout wrapper for credential input
 │   ├── rightContent.jsx     # Layout wrapper for the vault grid
 │   ├── newCredentials.jsx   # Form for adding new records
-│   ├── passwordCard.jsx     # Individual credential card
-│   └── ...
-├── App.jsx                  # Main shell and layout logic
-└── main.jsx                 # Entry point
-```
- 
----
- 
-## Getting started
- 
+│   └── passwordCard.jsx     # Individual credential card
+├── App.jsx              # Main shell and layout logic
+├── main.jsx             # Entry point
+└── App.css              # Global styles and terminal theme
+
+## 🚀 Getting started
+
 **You'll need:** Node.js `v18+` and npm `v9+`
- 
-```bash
+
+bash
 git clone https://github.com/simranbali-ace04/VaultWise.git
 cd VaultWise
 npm install
 npm run dev
-```
- 
-```bash
+
+
+bash
 npm run build    # production build
-```
- 
----
- 
+
 ## Stack
  
 `React 19` · `Vite` · `Tailwind v4` · `lucide-react` · `localStorage` · `Vercel`
