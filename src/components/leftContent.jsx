@@ -1,9 +1,9 @@
 import React from "react";
 import NewCredentials from "./newCredentials";
 
-const LeftContent = () => {
+const LeftContent = ({ passRecord }) => {
   return (
-      <NewCredentials />
+      <NewCredentials/>
   );
 };
 
