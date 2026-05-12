@@ -20,7 +20,7 @@
 
 ---
 
-## Why this exists
+## 💡 Why this exists
 
 I got tired of forgetting passwords. Tired of the "forgot password" loop at 2am. Tired of reusing the same one everywhere like a disaster waiting to happen.
 
@@ -29,19 +29,18 @@ I didn't want to hand my credentials to some cloud app I barely trust. I didn't 
 So I built VaultWise. A terminal-inspired, Cyber-Shell password manager that lives entirely in your browser. Matrix-green aesthetic, zero backend, everything stored locally. Built because sometimes you just build the thing yourself.
 
 ---
-
-## What's built so far
+## 🛠️ What's built so far
 
 > 🚧 Actively in progress — UI is fully done and responsive. Logic is being wired up.
 
-```
+
 [✓]  Fully responsive UI — looks clean from mobile to widescreen
 [~]  Save site, username & password to the vault
 [~]  Show / hide passwords on demand
 [~]  Copy credentials to clipboard
 [~]  Delete records
 [~]  localStorage persistence — stays in your browser, never leaves
-```
+
 
 `[✓] shipped  ·  [~] in progress`
 
@@ -58,14 +57,13 @@ So I built VaultWise. A terminal-inspired, Cyber-Shell password manager that liv
 <p align="left">
   <img src="src/assets/VaultWise_Mobile1.jpeg" width="25%" />
   &nbsp;&nbsp;
-  <img src="src/assets/VaultWise_Mobile1.jpeg" width="25%" />
+  <img src="src/assets/VaultWise_Mobile2.jpeg" width="25%" />
 </p>
 
 ---
+## 📂 Project structure
 
-## Project structure
 
-```
 src/
 ├── components/
 │   ├── navbar.jsx           # Branding, terminal status indicator
@@ -73,37 +71,35 @@ src/
 │   ├── rightContent.jsx     # Layout wrapper for the vault grid
 │   ├── newCredentials.jsx   # Form for adding new records
 │   ├── passwordCard.jsx     # Individual credential card
-│   └── ...
+├── assets/                  # Visual assets and screenshots
 ├── App.jsx                  # Main shell and layout logic
+├── App.css                  # Global styles and terminal theme
 └── main.jsx                 # Entry point
-```
+
 
 ---
-
-## Getting started
+## 🚀 Getting started
 
 **You'll need:** Node.js `v18+` and npm `v9+`
 
-```bash
+bash
 git clone https://github.com/simranbali-ace04/VaultWise.git
 cd VaultWise
 npm install
 npm run dev
-```
 
-```bash
+
+bash
 npm run build    # production build
-```
+
 
 ---
-
-## Stack
+## 💻 Stack
 
 `React 19` · `Vite` · `Tailwind v4` · `lucide-react` · `localStorage` · `Vercel`
 
 ---
-
-## Heads up
+## ⚠️ Heads up
 
 Passwords are stored as **plaintext in localStorage** for now — it's a personal tool under active development. Encryption is coming. Don't vault your bank login just yet. 🫡
 
