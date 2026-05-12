@@ -1,9 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Eye, EyeOff } from 'lucide-react';
 
 const NewCredentials = () => {
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log("Form Submitted!");
+    }
+
   return (
     <div className='h-auto md:h-full bg-black border border-[#00FF41] md:w-5/12 w-full flex flex-col rounded-xl overflow-hidden p-4 gap-0.5 font-mono'>
+        <form>
         <div className='flex flex-col p-0 gap-0'>
             <h1 className='text-white text-xl md:text-3xl'>Add New Credentials</h1>
             <h1 className='text-[#b6b3b3c1] md:text-xl'>NEW_CREDENTIAL.sh</h1>
@@ -28,10 +35,11 @@ const NewCredentials = () => {
         </div>
         </div>
         <div className='flex items-center justify-center'>
-            <button className='text-black font-light mt- text-sm md:text-xl bg-[#00FF41] shadow-[0_0_15px_rgba(0,255,65,0.4)] hover:bg-[#00cc33] px-6 py-3.5 rounded-md'>
+            <button onClick={handleSubmit} className='text-black font-light mt- text-sm md:text-xl bg-[#00FF41] shadow-[0_0_15px_rgba(0,255,65,0.4)] hover:bg-[#00cc33] px-6 py-3.5 rounded-md'>
                 <span>[ COMMIT ]</span>
                 </button>
         </div>
+    </form>
     </div>
   )
 }
