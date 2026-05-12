@@ -1,3 +1,4 @@
+
 # VaultWise
 
 ![VaultWise Banner](https://raw.githubusercontent.com/lucide-react/lucide/main/icons/vault.svg)
@@ -13,9 +14,14 @@ VaultWise is a high-performance, terminal-inspired password management interface
 
 VaultWise transforms the mundane task of password management into a terminal-like experience. Built with **React 19** and **Tailwind CSS 4**, it offers a lightning-fast, responsive interface that mimics a secure shell environment (`SECURE_SHELL v4.1.6`).
 
+### 📸 Visuals
+
+| Desktop View | Mobile View |
+| :---: | :---: |
+| ![Desktop View](./src/assets/VaultWise_DesktopView.jpeg) | ![Mobile View 1](./src/assets/VaultWise_Mobile1.jpeg) ![Mobile View 2](./src/assets/VaultWise_Mobile2.jpeg) |
+
 - **Target Audience**: Developers, SysAdmins, and users who prefer CLI-inspired aesthetics.
 - **Status**: Alpha (UI/UX Prototype)
-
 ## ✨ Features
 
 - **Terminal UI/UX**: Authentic monospace aesthetic with "Matrix Green" accents and terminal-style command prompts.
