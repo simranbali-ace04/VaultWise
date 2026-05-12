@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { Eye, EyeOff } from 'lucide-react';
 
-const NewCredentials = () => {
+const NewCredentials = ({onAddRecord}) => {
     const [siteName, setSiteName] = useState('');
     const [userIdent, setUserIdent] = useState('');
     const [targetUrl, setTargetUrl] = useState('');
@@ -9,6 +9,13 @@ const NewCredentials = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        const newRecord ={
+            siteName,
+            userIdent,
+            targetUrl,
+            passkey
+        };
+        onAddRecord(newRecord); // Pass the new record to the parent component
         console.log("Form Submitted!", { siteName, userIdent, targetUrl, passkey });  
         setSiteName('');
         setUserIdent('');

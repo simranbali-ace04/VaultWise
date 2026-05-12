@@ -3,7 +3,7 @@ import NewCredentials from "./newCredentials";
 
 const LeftContent = ({ passRecord }) => {
   return (
-      <NewCredentials/>
+      <NewCredentials onAddRecord={passRecord} />
   );
 };
 
