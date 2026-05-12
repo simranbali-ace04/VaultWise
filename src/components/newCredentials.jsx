@@ -10,10 +10,10 @@ const NewCredentials = ({onAddRecord}) => {
     const handleSubmit = (e) => {
         e.preventDefault();
         const newRecord ={
-            siteName,
-            userIdent,
-            targetUrl,
-            passkey
+            siteName: siteName,
+            userIdent: userIdent,
+            targetUrl: targetUrl,
+            passkey: passkey
         };
         onAddRecord(newRecord); // Pass the new record to the parent component
         console.log("Form Submitted!", { siteName, userIdent, targetUrl, passkey });  

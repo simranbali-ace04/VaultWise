@@ -1,7 +1,7 @@
 import React from "react";
 import { Trash } from "lucide-react";
 
-const PasswordCard = () => {
+const PasswordCard = ({record}) => {
   return (
     <div className="bg-black border-l-8 border-[#00FF41] border-r border-t border-b rounded-xl p-4 mt-4 flex flex-col gap-2 h-auto min-h-40 w-56 shadow-[0_0_10px_rgba(0,255,65,0.2)] font-mono overflow-hidden">
       <div className="w-full">
@@ -13,27 +13,27 @@ const PasswordCard = () => {
               alt="icon"
             />
           </span>
-          AMAZON
+          {record.siteName}
         </h1>
         <div className="flex flex-col p-2 items-start w-full">
           <h1 className="text-[#b6b3b3c1] flex flex-row gap-4 w-full min-w-0">
             <span className="w-10 shrink-0">usr</span>
             <span className="text-white truncate font-medium flex-1">
-              Simran_Bali
+              {record.userIdent}
             </span>
           </h1>
           
           <h1 className="text-[#b6b3b3c1] flex flex-row gap-4 w-full min-w-0">
             <span className="w-10 shrink-0">url</span>
             <span className="text-white truncate font-medium flex-1">
-              https://www.amazon.com
+              {record.targetUrl}
             </span>
           </h1>
 
           <h1 className="text-[#b6b3b3c1] flex flex-row gap-4 w-full min-w-0">
             <span className="w-10 shrink-0">pwd</span>
             <span className="text-white font-medium flex-1 break-all">
-              something@123
+              {record.passkey}
             </span>
           </h1>
         </div>
