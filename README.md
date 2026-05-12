@@ -34,7 +34,7 @@ So I built VaultWise. A terminal-inspired, Cyber-Shell password manager that liv
 > 🚧 Actively in progress — UI is fully done and responsive. Logic is being wired up.
 
 [✓]  Fully responsive UI — looks clean from mobile to widescreen
-[~]  Save site, username & password to the vault (Master state array initialized)
+[✓]  Save site, username & password to the vault (Data capturing implemented)
 [~]  Show / hide passwords on demand
 [~]  Copy credentials to clipboard
 [~]  Delete records
