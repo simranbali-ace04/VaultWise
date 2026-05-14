@@ -4,6 +4,7 @@ import {Vault} from 'lucide-react'
 import LeftContent from './components/leftContent'
 import RightContent from './components/rightContent'
 import { Trash } from "lucide-react";
+import PasswordCard from './components/passwordCard';
 
 const App = () => {
 
