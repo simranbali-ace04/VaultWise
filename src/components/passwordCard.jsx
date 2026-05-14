@@ -4,14 +4,17 @@ import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
 import {ShieldUser} from "lucide-react";
 import {Copy} from "lucide-react";
+import {ClipboardCheck} from "lucide-react";
 
 const PasswordCard = ({record, onDelete}) => {
 
   const [showPass, setShowPass] = useState(false);
+  const [isCopied, setIsCopied] = useState(false);
 
   const copyPass = () => {
     navigator.clipboard.writeText(record.passkey);
-    alert("Password Copied!")
+    setIsCopied(true);
+    setTimeout(() => setIsCopied(false), 2000);
   }
   return (
     <div className="bg-black border-l-8 border-[#00FF41] border-r border-t border-b rounded-xl p-4 mt-4 flex flex-col gap-2 h-auto min-h-40 w-56 shadow-[0_0_10px_rgba(0,255,65,0.2)] font-mono overflow-hidden">
@@ -62,7 +65,11 @@ const PasswordCard = ({record, onDelete}) => {
               )}
             </span>
             <button onClick={copyPass}>
-              <Copy className="text-[#00FF41] hover:text-[#00cc33] cursor-pointer h-5 w-5" />
+              {isCopied ? (
+                <ClipboardCheck className="text-[#00FF41] hover:text-[#00cc33] cursor-pointer h-5 w-5" />
+              ) : (
+                <Copy className="text-[#00FF41] hover:text-[#00cc33] cursor-pointer h-5 w-5" />
+              )}
             </button>
         </div>
       </div>
