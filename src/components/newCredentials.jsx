@@ -88,7 +88,7 @@ const NewCredentials = ({ onAddRecord }) => {
                 className="absolute right-3 cursor-pointer text-white z-10 p-1 flex items-center"
                 onClick={() => setShowPass(!showPass)}
               >
-                {showPass ? <EyeOff size={20} /> : <Eye size={20} />}
+                {showPass ? <Eye size={20} /> : <EyeOff size={20} />}
               </div>
             </div>
           </div>
