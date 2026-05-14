@@ -7,6 +7,8 @@ const NewCredentials = ({onAddRecord}) => {
     const [targetUrl, setTargetUrl] = useState('');
     const [passkey, setPasskey] = useState('');
 
+    const [showPass, setShowPass] = useState(false);
+
     const handleSubmit = (e) => {
         e.preventDefault();
         const newRecord ={
@@ -51,21 +53,21 @@ const NewCredentials = ({onAddRecord}) => {
             }} />
         </div>
         <div className='flex flex-col md:flex-row items-center md:justify-between p-3'>
-            <h1 className='text-white md:text-2xl'>TARGET_URL:</h1>
+            <h1 className='text-white md:text-2xl'>TARGET_URL:
+            </h1>
             <input type="text" placeholder='Enter site url' className='p-1 border-2 rounded-b-sm border-[#b6b3b3c1] bg-[#b6b3b31a] text-white text-xl  md:w-60' 
             value={targetUrl}
             onChange={(e) => {
                 setTargetUrl(e.target.value);
-            }}/>
+            }}
+            />
         </div>
         <div className='flex flex-col md:flex-row items-center md:justify-between p-3'>
             <h1 className='text-white md:text-2xl'>PASSKEY:</h1>
-            <input type="text" placeholder='Enter password' className='p-1 border-2 rounded-b-sm border-[#b6b3b3c1] bg-[#b6b3b31a] text-white text-xl  md:w-60' 
+            <input type={showPass ? "text" : "password"} placeholder='Enter password' className='p-1 border-2 rounded-b-sm border-[#b6b3b3c1] bg-[#b6b3b31a] text-white text-xl  md:w-60' 
             value={passkey}
             onChange={(e) =>{
                 setPasskey(e.target.value);
-                
-                
             }}/>
         </div>
         </div>
