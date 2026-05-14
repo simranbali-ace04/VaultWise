@@ -1,7 +1,7 @@
 import React from "react";
 import { Trash } from "lucide-react";
 
-const PasswordCard = ({record}) => {
+const PasswordCard = ({record, onDelete}) => {
   return (
     <div className="bg-black border-l-8 border-[#00FF41] border-r border-t border-b rounded-xl p-4 mt-4 flex flex-col gap-2 h-auto min-h-40 w-56 shadow-[0_0_10px_rgba(0,255,65,0.2)] font-mono overflow-hidden">
       <div className="w-full">
@@ -38,7 +38,7 @@ const PasswordCard = ({record}) => {
           </h1>
         </div>
         <div className="flex justify-end">
-            <button>
+            <button onClick={onDelete}>
               <Trash className="text-[#00FF41] hover:text-[#00cc33] cursor-pointer" />
             </button>
         </div>

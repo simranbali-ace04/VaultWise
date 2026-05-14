@@ -11,6 +11,12 @@ const App = () => {
   const addRecord = (record) => {
     setVaultData([...vaultData, record]);
   }
+
+  const deleteRecord = (index) => {
+    const updateVault = [...vaultData];
+    updateVault.splice(index, 1);
+    setVaultData(updateVault);
+  }
   
   return (
     <div className="min-h-screen bg-[#050505] flex items-center justify-center p-4 md:p-10 ">
@@ -18,7 +24,7 @@ const App = () => {
         <Navbar />
         <div className="flex flex-col md:flex-row gap-5 p-4 flex-1 overflow-y-auto md:overflow-hidden min-h-0 w-full no-scrollbar">
         <LeftContent passRecord={addRecord} />
-        <RightContent vault={vaultData} />
+        <RightContent vault={vaultData} onDelete={deleteRecord} />
         </div>
       </div>
     </div>
