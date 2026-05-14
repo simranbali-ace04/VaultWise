@@ -7,15 +7,21 @@ import { Trash } from "lucide-react";
 
 const App = () => {
 
-  const [vaultData, setVaultData] = useState([]);
+  const [vaultData, setVaultData] = useState(() => {
+    const savedData = localStorage.getItem("vaultData");
+    return savedData ? JSON.parse(savedData) : [];
+  });
   const addRecord = (record) => {
+
     setVaultData([...vaultData, record]);
+    localStorage.setItem("vaultData", JSON.stringify([...vaultData, record]));
   }
 
   const deleteRecord = (index) => {
     const updateVault = [...vaultData];
     updateVault.splice(index, 1);
     setVaultData(updateVault);
+    localStorage.setItem("vaultData", JSON.stringify(updateVault));
   }
   
   return (
