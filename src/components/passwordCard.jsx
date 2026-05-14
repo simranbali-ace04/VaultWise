@@ -2,6 +2,7 @@ import React from "react";
 import { Trash } from "lucide-react";
 import { useState } from "react";
 import { Eye, EyeOff } from "lucide-react";
+import {ShieldUser} from "lucide-react";
 
 const PasswordCard = ({record, onDelete}) => {
 
@@ -9,13 +10,9 @@ const PasswordCard = ({record, onDelete}) => {
   return (
     <div className="bg-black border-l-8 border-[#00FF41] border-r border-t border-b rounded-xl p-4 mt-4 flex flex-col gap-2 h-auto min-h-40 w-56 shadow-[0_0_10px_rgba(0,255,65,0.2)] font-mono overflow-hidden">
       <div className="w-full">
-        <h1 className="text-[#00FF41] filter drop-shadow-[0_0_8px_#00FF41] text-xl md:text-2xl flex items-center gap-4 tracking-wider">
+        <h1 className="text-[#00FF41] filter drop-shadow-[0_0_8px_#00FF41] text-xl md:text-2xl flex items-center gap-3 tracking-wider">
           <span>
-            <img
-              className="size-10 rounded-2xl"
-              src="https://static.vecteezy.com/system/resources/previews/019/136/322/original/amazon-logo-amazon-icon-free-free-vector.jpg"
-              alt="icon"
-            />
+            <ShieldUser className="text-[#00FF41] h-9 w-8" />
           </span>
           {record.siteName}
         </h1>
